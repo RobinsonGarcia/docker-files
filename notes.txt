@@ -1,0 +1,4 @@
+docker run -ti --runtime=nvidia nvidia/cuda:9.0-cudnn7-runtime-ubuntu16.04
+#--DOCKER remove all stopped containers: docker rm $(docker ps -a -q)
+#--DOCKER list running containers: docker container ls
+#--DOCKER remove image: docker rmi 9893a7ad655fb
