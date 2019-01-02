@@ -1,0 +1,12 @@
+##Docker
+to start a container with GPU access and port forwarding (for jupyter):
+
+docker run -p 8888:8888 -ti --runtime=nvidia vision/deeplearning
+
++shared volume (-v)
+docker run -it -p 8888:8888 -v /home/robinson/Documents/image-classification/dataset/train/:/tmp  --runtime=nvidia vision/deeplearning
+
+
+##Usage
+to start jupyter, use: juputer-notebook --ip 127.0.0.1 --allow-root
+
